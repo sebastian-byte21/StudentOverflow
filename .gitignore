@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+env/
+
+# Env files
+.env
+*.env
+
+# Node
+node_modules/
+dist/
+build/
+
+# VSCode
+.vscode/*.log

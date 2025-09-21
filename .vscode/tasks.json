@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Frontend: npm install",
+      "type": "shell",
+      "command": "npm",
+      "windows": { "command": "${env:ProgramFiles}\\nodejs\\npm.cmd" },
+      "args": ["install"],
+      "options": { "cwd": "${workspaceFolder}/StudentOverflow/frontend" },
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Frontend: vite (direct)",
+      "type": "shell",
+      "command": "${env:ProgramFiles}\\nodejs\\node.exe",
+      "args": [
+        "node_modules/vite/bin/vite.js"
+      ],
+      "options": { "cwd": "${workspaceFolder}/StudentOverflow/frontend" },
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "vite",
+          "fileLocation": ["relative", "${workspaceFolder}/StudentOverflow/frontend"],
+          "pattern": { "regexp": "^$" },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Local:",
+            "endsPattern": "ready in"
+          }
+        }
+      ],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Backend: uvicorn --reload",
+      "type": "shell",
+      "command": "python",
+      "windows": { "command": "${command:python.interpreterPath}" },
+      "args": ["-m", "uvicorn", "app.main:app", "--reload"],
+      "options": { "cwd": "${workspaceFolder}/StudentOverflow/backend" },
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "uvicorn",
+          "fileLocation": ["relative", "${workspaceFolder}/StudentOverflow/backend"],
+          "pattern": { "regexp": ".*" },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Uvicorn running on",
+            "endsPattern": "Application startup complete."
+          }
+        }
+      ],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Frontend: npm run dev",
+      "type": "shell",
+      "command": "npm",
+      "windows": { "command": "${env:ProgramFiles}\\nodejs\\npm.cmd" },
+      "args": ["run", "dev"],
+      "options": { "cwd": "${workspaceFolder}/StudentOverflow/frontend" },
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "vite",
+          "fileLocation": ["relative", "${workspaceFolder}/StudentOverflow/frontend"],
+          "pattern": {
+            "regexp": "^$"
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Local:",
+            "endsPattern": "ready in"
+          }
+        }
+      ],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}
