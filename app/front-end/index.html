@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StudentOverflow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">StudentOverflow</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Preguntas</a></li>
+          <li><a href="#">Etiquetas</a></li>
+          <li><a href="#">Usuarios</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn btn-ghost">Iniciar sesión</button>
+        <!-- ÚNICO con funcionalidad -->
+        <a href="registro.html" class="btn btn-primary">Registrarse</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Encuentra respuestas a tus dudas académicas</h1>
+      <p>Únete a la comunidad de estudiantes y profesores más grande. Pregunta, responde y aprende juntos.</p>
+      <div class="cta-group">
+        <button class="btn btn-primary">Hacer una pregunta</button>
+        <button class="btn btn-ghost">Explorar preguntas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas recientes -->
+  <main class="container">
+    <div class="questions-header">
+      <h2>Preguntas recientes</h2>
+      <select>
+        <option>Más recientes</option>
+        <option>Más votadas</option>
+      </select>
+    </div>
+
+    <div class="questions-list">
+      <article class="question-card">
+        <div class="stats">
+          <span>24 votos</span>
+          <span>1 respuesta</span>
+          <span>120 vistas</span>
+        </div>
+        <div class="content">
+          <h3>¿Cómo resolver integrales por partes en cálculo integral?</h3>
+          <p>Tengo problemas para entender cómo aplicar la fórmula de integración por partes. ¿Alguien puede ayudarme con un ejemplo práctico?</p>
+          <div class="tags">
+            <span class="tag math">matemáticas</span>
+          </div>
+          <div class="meta">Ana García · hace 2h</div>
+        </div>
+      </article>
+
+      <article class="question-card">
+        <div class="stats">
+          <span>18 votos</span>
+          <span>5 respuestas</span>
+          <span>300 vistas</span>
+        </div>
+        <div class="content">
+          <h3>Error en Python: "list index out of range" - ¿Cómo solucionarlo?</h3>
+          <p>Estoy recibiendo este error al intentar acceder a un elemento de una lista que no existe. Mi código parece correcto pero no sé qué está mal.</p>
+          <div class="tags">
+            <span class="tag code">python</span>
+          </div>
+          <div class="meta">Carlos López · hace 16h</div>
+        </div>
+      </article>
+
+      <article class="question-card">
+        <div class="stats">
+          <span>12 votos</span>
+          <span>2 respuestas</span>
+          <span>90 vistas</span>
+        </div>
+        <div class="content">
+          <h3>¿Cuál es la diferencia entre velocidad y aceleración en física?</h3>
+          <p>No comprendo cómo se diferencian estos conceptos. ¿Podrían explicarlo con ejemplos sencillos?</p>
+          <div class="tags">
+            <span class="tag physics">física</span>
+          </div>
+          <div class="meta">María Rodríguez · hace 1 día</div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>StudentOverflow</h4>
+        <p>La comunidad de preguntas y respuestas para estudiantes y profesores.</p>
+      </div>
+      <div>
+        <h4>Comunidad</h4>
+        <ul>
+          <li><a href="#">Mi perfil</a></li>
+          <li><a href="#">Mis preguntas</a></li>
+          <li><a href="#">Mis respuestas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

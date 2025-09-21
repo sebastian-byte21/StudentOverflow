@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feed - StudentOverflow</title>
+  <link rel="stylesheet" href="feed.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">StudentOverflow</div>
+      <input type="search" placeholder="Buscar preguntas..." class="search" />
+      <div class="profile">María ▼</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Preguntas</a></li>
+          <li><a href="#">Etiquetas</a></li>
+          <li><a href="#">Usuarios</a></li>
+        </ul>
+      </nav>
+      <h4>Mis etiquetas</h4>
+      <ul class="tags">
+        <li><span class="tag">javascript</span> (1)</li>
+        <li><span class="tag">python</span> (2)</li>
+        <li><span class="tag">matemáticas</span> (1)</li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="feed">
+      <div class="feed-header">
+        <h2>Preguntas para ti</h2>
+        <select>
+          <option>Más recientes</option>
+          <option>Más votadas</option>
+        </select>
+      </div>
+
+      <article class="question-card">
+        <h3>¿Cómo optimizar consultas SQL complejas?</h3>
+        <p>Tengo una consulta muy grande que incluye múltiples JOINs y subconsultas. ¿Qué técnicas son recomendables para mejorar el rendimiento?</p>
+        <div class="meta">
+          <span>24 votos</span> · <span>2 respuestas</span> · <span>Pedro Martínez</span>
+        </div>
+      </article>
+
+      <article class="question-card">
+        <h3>Diferencia entre let, const y var en JavaScript</h3>
+        <p>Sigo confundiéndome con cuándo usar cada uno. ¿Alguien puede explicar las diferencias principales y cuándo es mejor usar uno sobre otro?</p>
+        <div class="meta">
+          <span>18 votos</span> · <span>1 respuesta</span> · <span>Laura Gómez</span>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
